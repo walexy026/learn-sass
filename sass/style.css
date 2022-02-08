@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body {
+  margin: 20px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  border-bottom: 0.5px solid black;
+  padding-bottom: 20px;
+  padding-left: 800px;
+}
+
+ul li {
+  text-align: right;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#bd0f0f), to(#350a6d));
+  background-image: linear-gradient(to top right, #bd0f0f, #350a6d);
+  width: 400px;
+  height: 250px;
+  color: ₦fff;
+  line-height: 2vh;
+}
+
+.card p {
+  padding-left: 30px;
+}
+
+.card h5 {
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.card img {
+  width: 50px;
+}
+
+.card .mastercard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logostyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logostyle .logo img {
+  width: 40px;
+  padding-right: 50px;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0.5px solid black;
+  padding-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.details .input1 {
+  background-color: #fff;
+  width: 300px;
+  height: 30px;
+  border-color: #fff;
+}
+
+.details button {
+  background-color: blue;
+  width: 500px;
+  color: #fff;
+  height: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0.5px solid #7e7b7b;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer input {
+  margin-top: 20px;
+  background-color: blue;
+  color: #fff;
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */

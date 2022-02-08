@@ -1,0 +1,100 @@
+$bgcolor: ₦fff;
+$fontF: Verdana, Geneva, Tahoma, sans-serif;
+$button: blue;
+
+body {
+    margin: 20px;
+}
+
+ul {
+    display: flex;
+    // justify-items: right;
+    justify-content: space-around;
+    list-style: none;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 20px;
+    // width: 600px;
+    padding-left: 800px;
+    li{
+    text-align: right;        
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.card {
+    background-image: linear-gradient(to top right, rgb(189, 15, 15),rgb(53, 10, 109));
+    width: 400px;
+    height: 250px;
+    color: $bgcolor;
+    line-height: 2vh;
+
+    p{
+        padding-left: 30px;
+        
+    }
+    h5 {
+        padding-left: 30px;
+        padding-top: 15px;
+
+    }
+    img {
+        width: 50px;
+        // padding-left: 200px;
+        // padding-bottom: 150px;
+    }
+    .mastercard {
+        display: flex;
+    }
+}
+.logostyle {
+    display: flex;
+    justify-content: space-between;
+
+
+.logo img{
+    width: 40px; 
+    padding-right: 50px;   
+}
+}
+.details {
+    display: flex;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    
+    .input1 {
+        background-color: #fff;
+        width: 300px;
+        height: 30px;
+        border-color: #fff;
+    }
+
+    button {
+        background-color: $button;
+        width: 500px;
+        color: #fff;
+        height: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+    }
+}
+section {
+    display: flex;
+    border-bottom: 0.5px solid rgb(126, 123, 123);
+    justify-content: space-between;
+    width: 100%;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    input {
+        margin-top: 20px;
+        background-color: $button;
+        color: #fff;
+        width: 200px;
+    }
+}
