@@ -1,6 +1,5 @@
-@charset "UTF-8";
 body {
-  margin: 20px;
+  margin: 10px;
 }
 
 ul {
@@ -29,30 +28,24 @@ ul a {
   background-image: linear-gradient(to top right, #bd0f0f, #350a6d);
   width: 400px;
   height: 250px;
-  color: ₦fff;
-  line-height: 2vh;
+  color: #fff;
+  line-height: 1vh;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 10px;
 }
 
 .card p {
+  letter-spacing: 4px;
   padding-left: 30px;
-}
-
-.card h5 {
-  padding-left: 30px;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 .card img {
-  width: 50px;
+  padding-left: 30px;
 }
 
 .card .mastercard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logostyle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,8 +54,12 @@ ul a {
           justify-content: space-between;
 }
 
-.logostyle .logo img {
-  width: 40px;
+.card .mastercard img {
+  padding-right: 40px;
+}
+
+.logo {
+  padding-bottom: 30px;
   padding-right: 50px;
 }
 
@@ -70,34 +67,33 @@ ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 0.5px solid black;
-  padding-bottom: 30px;
+  padding-top: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 500px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.details .input1 {
-  background-color: #fff;
-  width: 300px;
+.details .input1:focus {
+  background-color: #37bac4;
+  width: 200px;
   height: 30px;
   border-color: #fff;
 }
 
-.details button {
-  background-color: blue;
-  width: 500px;
-  color: #fff;
+.details .input1 {
+  width: 200px;
+  border-radius: 5px;
   height: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  border-color: whitesmoke;
 }
 
 section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 0.5px solid #7e7b7b;
+  border-bottom: 0.5px solid #7b7c7e;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -118,5 +114,15 @@ footer input {
   background-color: blue;
   color: #fff;
   width: 200px;
+}
+
+button {
+  background-color: blue;
+  width: 500px;
+  color: #fff;
+  height: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

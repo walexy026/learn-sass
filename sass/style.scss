@@ -1,9 +1,9 @@
-$bgcolor: ₦fff;
+$bgcolor: #fff;
 $fontF: Verdana, Geneva, Tahoma, sans-serif;
 $button: blue;
 
 body {
-    margin: 20px;
+    margin: 10px;
 }
 
 ul {
@@ -29,62 +29,56 @@ ul {
     width: 400px;
     height: 250px;
     color: $bgcolor;
-    line-height: 2vh;
-
+    line-height: 1vh;
+    border-radius: 10px;
+    font-family: $fontF;
+    padding-top: 10px;
     p{
-        padding-left: 30px;
-        
+        letter-spacing: 4px;
+        padding-left: 30px;  
+        padding-top: 5px;
     }
-    h5 {
-        padding-left: 30px;
-        padding-top: 15px;
-
-    }
+    
     img {
-        width: 50px;
-        // padding-left: 200px;
-        // padding-bottom: 150px;
+        padding-left: 30px;
     }
     .mastercard {
         display: flex;
+        justify-content: space-between;
+
+        img {
+            padding-right: 40px;
+        }
     }
 }
-.logostyle {
-    display: flex;
-    justify-content: space-between;
-
-
-.logo img{
-    width: 40px; 
-    padding-right: 50px;   
-}
+.logo {
+    padding-bottom: 30px;
+    padding-right: 50px;
 }
 .details {
     display: flex;
-    border-bottom: 0.5px solid black;
-    padding-bottom: 30px;
+    padding-top: 50px;
     justify-content: space-between;
+    width: 500px;
+    font-family: $fontF;
     
-    .input1 {
-        background-color: #fff;
-        width: 300px;
+    .input1:focus{
+        background-color: rgb(55, 186, 196);
+        width: 200px;
         height: 30px;
         border-color: #fff;
+    
     }
-
-    button {
-        background-color: $button;
-        width: 500px;
-        color: #fff;
+    .input1 {
+        width: 200px;
+        border-radius: 5px;
         height: 30px;
-        padding-top: 20px;
-        padding-bottom: 30px;
-
+        border-color: whitesmoke;
     }
 }
 section {
     display: flex;
-    border-bottom: 0.5px solid rgb(126, 123, 123);
+    border-bottom: 0.5px solid rgb(123, 124, 126);
     justify-content: space-between;
     width: 100%;
 }
@@ -97,4 +91,14 @@ footer {
         color: #fff;
         width: 200px;
     }
+}
+button {
+    background-color: $button;
+    width: 500px;
+    color: #fff;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
