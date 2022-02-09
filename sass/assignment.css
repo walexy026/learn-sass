@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=assignment.css.map */
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main div:nth-child(1) {
+  background-color: #c0fffc;
+}
+
+.main div:nth-child(2) {
+  background-color: #46468b;
+}
+
+.main div:nth-child(3) {
+  background-color: #21f30e;
+}
+
+.main button {
+  background-color: yellow;
+  border-radius: 5px;
+  border-color: #fff;
+  padding: 20px;
+  width: 100px;
+  padding-right: 20px;
+}
+
+.main button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.main div {
+  width: 500px;
+  height: 300px;
+}
+
+.main h4 {
+  font-family: arial;
+  background-color: rosybrown;
+  text-align: center;
+}
+/*# sourceMappingURL=assignment.css.map */
