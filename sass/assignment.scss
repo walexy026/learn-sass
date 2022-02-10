@@ -1,69 +1,41 @@
-// @import "reset";
-// @import "color";
-
-// .main{
-//     display: flex;
-//     justify-content: space-around;
-
-//     div:nth-child(1){
-//         background-color: $box1-bg-color;
-//     }
-//     div:nth-child(2){
-//         background-color: $box2-bg-color;
-//     }
-//     div:nth-child(3){
-//         background-color: $box3-bg-color;
-//     }
-
-//     div{
-//         width: 100vw;
-//         height: 300px;
-//     }
-
-//     h4{
-//         color: #fff;
-//         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-//     }
-
-//     button{
-//         background-color: $btn-bg-color;
-//         color: $btn-color;
-//         padding: 20px 100px;
-//         border: 1px solid $btn-border-color;      
-//     }
-//     button:hover{
-//         background-color: $btn-hover-bg-color;
-//         color: $btn-hover-color;
-//         border: 1px solid $btn-border-hover-color;      
-//     }
-// }
 @import "variable";
 
 .main {
     display: flex;
-    justify-content: space-around;
 
     div:nth-child(1){
                  background-color: $backgroundcolor1;
              }
              div:nth-child(2){
                  background-color: $backgroundcolor2;
+                 color: #fff;
+                 button {
+                     color: red;
+                     justify-self: center;
+                     font-weight: bolder;
+                 }
              }
              div:nth-child(3){
                  background-color: $backgroundcolor3;
+                 color: royalblue;
+    
              }
              button{
                  background-color: $buttoncolor1;
                  border-radius: 5px;
                  border-color: #fff;
                  padding: 20px;
-                 width: 100px;
-                 padding-right: 20px;
+                 width: 200px;
+                 padding-right: 50px;
+                 padding-left: 50px;
+                 vertical-align: bottom;
     
              }
              button:hover {
                  color: red;
                  cursor: pointer;
+                 border: 1px solid $buttoncolor1;
+
              }
         div{
             width: 500px;
@@ -71,7 +43,8 @@
         }
         h4{
             font-family: $myfont;
-            background-color: rosybrown;
             text-align: center;
+            padding-top: 100px;
+            text-transform: uppercase;
         }
 }

@@ -63,6 +63,14 @@ ul a {
   padding-right: 50px;
 }
 
+.logo .vdp {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,5 +132,34 @@ button {
   padding-top: 20px;
   padding-bottom: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+
+@-webkit-keyframes card {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+@keyframes card {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+.card {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  animation-direction: reverse;
+  -webkit-animation-name: card;
+          animation-name: card;
 }
 /*# sourceMappingURL=style.css.map */

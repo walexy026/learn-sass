@@ -2,8 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .main div:nth-child(1) {
@@ -12,10 +10,19 @@
 
 .main div:nth-child(2) {
   background-color: #46468b;
+  color: #fff;
+}
+
+.main div:nth-child(2) button {
+  color: red;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-weight: bolder;
 }
 
 .main div:nth-child(3) {
   background-color: #21f30e;
+  color: royalblue;
 }
 
 .main button {
@@ -23,13 +30,16 @@
   border-radius: 5px;
   border-color: #fff;
   padding: 20px;
-  width: 100px;
-  padding-right: 20px;
+  width: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+  vertical-align: bottom;
 }
 
 .main button:hover {
   color: red;
   cursor: pointer;
+  border: 1px solid yellow;
 }
 
 .main div {
@@ -39,7 +49,8 @@
 
 .main h4 {
   font-family: arial;
-  background-color: rosybrown;
   text-align: center;
+  padding-top: 100px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=assignment.css.map */

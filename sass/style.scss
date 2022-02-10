@@ -1,6 +1,6 @@
-$bgcolor: #fff;
-$fontF: Verdana, Geneva, Tahoma, sans-serif;
-$button: blue;
+// $bgcolor: #fff;
+// $fontF: Verdana, Geneva, Tahoma, sans-serif;
+// $button: blue;
 
 body {
     margin: 10px;
@@ -16,7 +16,7 @@ ul {
     // width: 600px;
     padding-left: 800px;
     li{
-    text-align: right;        
+        text-align: right;        
     }
     a{
         text-decoration: none;
@@ -24,7 +24,12 @@ ul {
     }
 }
 
+@keyframes card {
+    from {left: 0px;}
+  to {left: 200px;}
+}
 .card {
+    position: relative;
     background-image: linear-gradient(to top right, rgb(189, 15, 15),rgb(53, 10, 109));
     width: 400px;
     height: 250px;
@@ -33,6 +38,12 @@ ul {
     border-radius: 10px;
     font-family: $fontF;
     padding-top: 10px;
+    animation-name: card;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+
+    
+
     p{
         letter-spacing: 4px;
         padding-left: 30px;  
@@ -45,7 +56,7 @@ ul {
     .mastercard {
         display: flex;
         justify-content: space-between;
-
+        
         img {
             padding-right: 40px;
         }
@@ -54,6 +65,11 @@ ul {
 .logo {
     padding-bottom: 30px;
     padding-right: 50px;
+    .vdp {
+        justify-content: space-around;
+        display: flex;
+        padding-top: 100px;
+    }
 }
 .details {
     display: flex;
@@ -67,7 +83,7 @@ ul {
         width: 200px;
         height: 30px;
         border-color: #fff;
-    
+        
     }
     .input1 {
         width: 200px;
@@ -100,5 +116,7 @@ button {
     padding-top: 20px;
     padding-bottom: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-size: large;
+    border-radius: 50px;
+    
 }
