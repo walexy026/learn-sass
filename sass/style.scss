@@ -1,122 +1,141 @@
-// $bgcolor: #fff;
-// $fontF: Verdana, Geneva, Tahoma, sans-serif;
-// $button: blue;
-
+$bgcolor: #fff;
+$fontF: Verdana, Geneva, Tahoma, sans-serif;
+$button: blue;
+// * {
+//     box-sizing: border-box;
+//   }
+  
 body {
     margin: 10px;
+    
 }
 
-ul {
-    display: flex;
-    // justify-items: right;
-    justify-content: space-around;
-    list-style: none;
-    border-bottom: 0.5px solid black;
+nav {
+    display: grid;
+    justify-content: space-between;
+    width: 200px;
+    border-bottom: 1px dotted black;
     padding-bottom: 20px;
-    // width: 600px;
-    padding-left: 800px;
-    li{
-        text-align: right;        
-    }
+    // white-space: nowrap;
     a{
+        margin-right: 5px;
         text-decoration: none;
         color: black;
-    }
-}
-
-@keyframes card {
-    from {left: 0px;}
-  to {left: 200px;}
+    
+        img {
+            border-radius: 50%;
+        }
+    
+    
 }
 .card {
-    position: relative;
-    background-image: linear-gradient(to top right, rgb(189, 15, 15),rgb(53, 10, 109));
-    width: 400px;
+    width: 350px;
     height: 250px;
     color: $bgcolor;
-    line-height: 1vh;
+    line-height: 0.5vh;
     border-radius: 10px;
     font-family: $fontF;
     padding-top: 10px;
-    animation-name: card;
-    animation-duration: 4s;
-    animation-iteration-count: 3;
-
-    
+    // background-color: aquamarine;
+    background-image: linear-gradient(to top right, rgb(189, 15, 15),rgb(53, 10, 109));
 
     p{
         letter-spacing: 4px;
         padding-left: 30px;  
         padding-top: 5px;
     }
+}      
+ 
     
-    img {
-        padding-left: 30px;
-    }
-    .mastercard {
-        display: flex;
-        justify-content: space-between;
-        
-        img {
-            padding-right: 40px;
+    // img {
+        .mastercard {
+            display: flex;
+            width: 300px;
+            justify-content: space-between;
+            
+            img {
+                padding-right: 40px;
+            }
         }
-    }
+        // padding-left: 30px;
+    // }
 }
 .logo {
     padding-bottom: 30px;
     padding-right: 50px;
     .vdp {
-        justify-content: space-around;
-        display: flex;
-        padding-top: 100px;
+        // justify-content: space-around;
+        // display: flex;
+        padding-top: 50px;
     }
-}
-.details {
-    display: flex;
-    padding-top: 50px;
+form {
+    padding-top: 20px;
     justify-content: space-between;
-    width: 500px;
+    width: 150px;
     font-family: $fontF;
+    width: 100%;
     
-    .input1:focus{
+    .input:focus{
         background-color: rgb(55, 186, 196);
-        width: 200px;
-        height: 30px;
+        width: 150px;
+        height: 50px;
         border-color: #fff;
         
     }
-    .input1 {
-        width: 200px;
+    .input {
+        width: 100px;
         border-radius: 5px;
-        height: 30px;
+        height: 50px;
         border-color: whitesmoke;
     }
 }
-section {
-    display: flex;
-    border-bottom: 0.5px solid rgb(123, 124, 126);
-    justify-content: space-between;
-    width: 100%;
-}
 footer {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     input {
         margin-top: 20px;
         background-color: $button;
         color: #fff;
         width: 200px;
+        border-radius: 5px;
     }
 }
 button {
     background-color: $button;
-    width: 500px;
+    width: 250px;
     color: #fff;
-    height: 30px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    border-radius: 50px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: $fontF;
+    // font-size: large;
+    border-radius: 5px;
     
 }
+
+#amount {
+    // padding: 8px;
+    border-collapse: collapse;
+    border-bottom: 0.5px solid rgb(123, 124, 126);
+}
+#amount tr:nth-child(1){background-color: #f2f2f2;}
+#amount th:hover {background-color: #f3f3f3;
+color: aqua;}
+#amount th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+// .paymentpage{
+    // display:none
+// }
+// @media screen and (min-width: 480px) {
+//     ul {
+//       background-color: lightgreen;
+//     }
+//     .paymentpage{
+//         display: flex;
+//     }
+//   }

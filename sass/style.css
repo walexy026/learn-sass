@@ -2,59 +2,56 @@ body {
   margin: 10px;
 }
 
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style: none;
-  border-bottom: 0.5px solid black;
+nav {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  border-bottom: 1px dotted black;
   padding-bottom: 20px;
-  padding-left: 800px;
 }
 
-ul li {
-  text-align: right;
-}
-
-ul a {
+nav a {
+  margin-right: 5px;
   text-decoration: none;
   color: black;
 }
 
-.card {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#bd0f0f), to(#350a6d));
-  background-image: linear-gradient(to top right, #bd0f0f, #350a6d);
-  width: 400px;
+nav a img {
+  border-radius: 50%;
+}
+
+nav .card {
+  width: 350px;
   height: 250px;
   color: #fff;
-  line-height: 1vh;
+  line-height: 0.5vh;
   border-radius: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 10px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#bd0f0f), to(#350a6d));
+  background-image: linear-gradient(to top right, #bd0f0f, #350a6d);
 }
 
-.card p {
+nav .card p {
   letter-spacing: 4px;
   padding-left: 30px;
   padding-top: 5px;
 }
 
-.card img {
-  padding-left: 30px;
-}
-
-.card .mastercard {
+nav .mastercard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 300px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.card .mastercard img {
+nav .mastercard img {
   padding-right: 40px;
 }
 
@@ -64,57 +61,37 @@ ul a {
 }
 
 .logo .vdp {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-top: 50px;
 }
 
 .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 50px;
+  padding-top: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 500px;
+  width: 150px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
 }
 
 .details .input1:focus {
   background-color: #37bac4;
-  width: 200px;
-  height: 30px;
+  width: 150px;
+  height: 50px;
   border-color: #fff;
 }
 
 .details .input1 {
-  width: 200px;
+  width: 100px;
   border-radius: 5px;
-  height: 30px;
+  height: 50px;
   border-color: whitesmoke;
-}
-
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 0.5px solid #7b7c7e;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
 }
 
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 footer input {
@@ -122,44 +99,39 @@ footer input {
   background-color: blue;
   color: #fff;
   width: 200px;
+  border-radius: 5px;
 }
 
 button {
   background-color: blue;
-  width: 500px;
+  width: 250px;
   color: #fff;
-  height: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: large;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
 }
 
-@-webkit-keyframes card {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 300px;
-  }
+#amount {
+  border-collapse: collapse;
+  border-bottom: 0.5px solid #7b7c7e;
 }
 
-@keyframes card {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 300px;
-  }
+#amount tr:nth-child(1) {
+  background-color: #f2f2f2;
 }
 
-.card {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  animation-direction: reverse;
-  -webkit-animation-name: card;
-          animation-name: card;
+#amount th:hover {
+  background-color: #f3f3f3;
+  color: aqua;
+}
+
+#amount th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
